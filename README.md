@@ -48,6 +48,6 @@ myObject.showCustomer = (customer_id) => {
   }
 }
 ```
-As you can se we can call the function showCustomer() and pass it a value of customer id and it will pass the new parameters to DataTables. Datatables will then use these new parameters and send them to the server.
+As you can see we can call the function showCustomer() and pass it a value of customer id and it will pass the new parameters to DataTables. Datatables will then use these new parameters and send them to the server without destroying the table.
 
 Note Datables.js should be loaded ahead of this file.
