@@ -3,7 +3,7 @@ A simple way to reload DataTables.js with dynamic ajax parameters.
 
 This provides a way to pass datatables a set of parameters on initilization and then pass a new set of parameters without having to completely destroy and rebuild the table easily.
 
-Examples:
+Example:
 
 ```javascript
 
@@ -35,7 +35,7 @@ myObject.showCustomer = (customer_id) => {
   if($.fn.dataTable.isDataTable(myObject.dtr.tableEl)){
     
     // Set the param for the reload
-	  myObject.dtr.setReloadParam(Customers.bDT.getParam());
+    myObject.dtr.setReloadParam(Customers.bDT.getParam());
 	  
     // Reload the table with the new param
     myObject.dtr.tableDt.ajax.reload();
@@ -43,7 +43,7 @@ myObject.showCustomer = (customer_id) => {
   }else{
   
     // Inital Creation of the table
-	  myObject.dtr.create('#myTableID');
+    myObject.dtr.create('#myTableID');
     
   }
 }
