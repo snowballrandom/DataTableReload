@@ -35,7 +35,7 @@ myObject.showCustomer = (customer_id) => {
   if($.fn.dataTable.isDataTable(myObject.dtr.tableEl)){
     
     // Set the param for the reload
-    myObject.dtr.setReloadParam(Customers.bDT.getParam());
+    myObject.dtr.setReloadParam(myObject.dtr.getParam());
 	  
     // Reload the table with the new param
     myObject.dtr.tableDt.ajax.reload();
